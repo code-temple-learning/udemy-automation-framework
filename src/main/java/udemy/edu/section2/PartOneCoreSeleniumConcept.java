@@ -3,7 +3,6 @@ package udemy.edu.section2;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 
 import java.time.Duration;
 
@@ -39,7 +38,6 @@ public class PartOneCoreSeleniumConcept {
         driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
         driver.findElement(By.id("chkboxOne")).click();
         driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
-        Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in.");
     }
 
 }

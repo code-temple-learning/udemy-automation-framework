@@ -8,16 +8,24 @@ import org.openqa.selenium.support.ui.Select;
 
 public class StaticDropDown {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
-        WebElement staticDropdown = driver.findElement(By.id("ct100_mainContent_DropDownListCurrency"));
+        System.out.println("WAITING FOR WEBPAGE TO LOAD");
+        Thread.sleep(4000);
+        WebElement staticDropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
+        System.out.println("INTERACTING WITH DROPDOWN");
+        Thread.sleep(3000);
         Select dropdown = new Select(staticDropdown);
-        dropdown.selectByIndex(3);
-        System.out.println(dropdown.getFirstSelectedOption().getText());
-        dropdown.selectByVisibleText("AED");
-        System.out.println(dropdown.getFirstSelectedOption().getText());
-        dropdown.selectByValue("INR");
-        System.out.println(dropdown.getFirstSelectedOption().getText());
+        Thread.sleep(2000);
+        System.out.println("INDEX 3 SELECTED");
+        dropdown.selectByIndex(1);
+        Thread.sleep(4000);
+        driver.close();
+//        System.out.println(dropdown.getFirstSelectedOption().getText());
+//        dropdown.selectByVisibleText("AED");
+//        System.out.println(dropdown.getFirstSelectedOption().getText());
+//        dropdown.selectByValue("INR");
+//        System.out.println(dropdown.getFirstSelectedOption().getText());
     }
 }

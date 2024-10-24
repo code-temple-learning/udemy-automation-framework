@@ -14,5 +14,7 @@ public class Checkboxes {
         driver.findElement(By.id("checkBoxOption1")).click();
         System.out.println(driver.findElement(By.id("checkBoxOption1")).isSelected()); // prints false, checkbox unselected
         // driver.findElement(By.cssSelector("input[value='checkbox']")).size();
+        driver.close();
+        System.out.printf("TEST SUCCESS");
     }
 }

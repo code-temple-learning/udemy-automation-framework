@@ -22,5 +22,7 @@ public class AngularPractice {
         driver.findElement(By.name("bday")).sendKeys("02/25/1994");
         driver.findElement(By.cssSelector(".btn-success")).click();
         System.out.println(driver.findElement(By.cssSelector(".alert-success")).getText());
+        driver.close();
+        System.out.println("TEST SUCCESS");
     }
 }

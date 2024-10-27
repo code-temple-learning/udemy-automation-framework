@@ -27,7 +27,6 @@ public class SeleniumGroceryStore {
         driver.findElement(By.cssSelector("button.promoBtn")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
         System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
-
         driver.close();
         System.out.println("TEST SUCCESS");
     }

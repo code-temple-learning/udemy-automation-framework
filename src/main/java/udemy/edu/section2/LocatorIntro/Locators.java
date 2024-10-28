@@ -1,4 +1,4 @@
-package udemy.edu.section2;
+package udemy.edu.section2.LocatorIntro;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +25,7 @@ public class Locators {
         Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(), "Hello " + username + ",");
         driver.findElement(By.xpath("//*[text()='Log Out']")).click();
         driver.close();
+        System.out.println("TEST SUCCESS");
     }
     public static String getPassword(int choosePassword) {
         return passwordList[choosePassword];

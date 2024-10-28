@@ -1,4 +1,4 @@
-package udemy.edu.section2;
+package udemy.edu.section2.LocatorIntro;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -38,6 +38,8 @@ public class PartOneCoreSeleniumConcept {
         driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
         driver.findElement(By.id("chkboxOne")).click();
         driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
+        driver.close();
+        System.out.println("TEST SUCCESS");
     }
 
 }

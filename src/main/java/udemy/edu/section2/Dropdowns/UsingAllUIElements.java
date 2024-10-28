@@ -1,4 +1,4 @@
-package udemy.edu.section2;
+package udemy.edu.section2.Dropdowns;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -35,6 +35,8 @@ public class UsingAllUIElements {
         driver.findElement(By.cssSelector("input[value='Search']")).click();
         //  driver.findElement(By.xpath("//input[@value='Search']")).click();
         //  driver.findElement(By.name("ctl00$mainContent$btn_FindFlights")).click();
+        driver.close();
+        System.out.println("TEST SUCCESS");
     }
 
 }

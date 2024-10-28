@@ -1,4 +1,4 @@
-package udemy.edu.section2;
+package udemy.edu.section2.Synchronization;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -30,5 +30,6 @@ public class FluentWait {
         });
         System.out.println(driver.findElement(By.cssSelector("[id='finish'] h4")).getText());
         driver.close();
+        System.out.println("TEST SUCCESS");
     }
 }

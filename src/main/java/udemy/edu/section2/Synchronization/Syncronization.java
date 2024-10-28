@@ -1,4 +1,4 @@
-package udemy.edu.section2;
+package udemy.edu.section2.Synchronization;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -35,7 +35,7 @@ public class Syncronization {
         }
         driver.findElement(By.partialLinkText("Checkout")).click();
         System.out.println("TEST SUCCESS");
-//        driver.close();
+        driver.close();
     }
 
 //    public static void selectDropdownByIndex(By locator, int dropdownOptions) {

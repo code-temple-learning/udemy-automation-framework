@@ -21,5 +21,7 @@ public class WHAssignment {
         System.out.println(driver.findElement(By.xpath("//div/h3")).getText());
         driver.switchTo().window(parentWindow);
         System.out.println(driver.findElement(By.xpath("//div[@id='content']/div/h3")).getText());
+        driver.close();
+        System.out.println("TEST SUCCESS");
     }
 }

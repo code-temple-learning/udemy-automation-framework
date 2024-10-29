@@ -11,6 +11,7 @@ public class Locators {
     static WebDriver driver = new ChromeDriver();
     static String[] userNames = {"rahul", "shetty"};
     static String[] passwordList = {"rahulshettyacademy", "cuzi"};
+
     public static void main(String[] args) throws InterruptedException {
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -27,6 +28,7 @@ public class Locators {
         driver.close();
         System.out.println("TEST SUCCESS");
     }
+
     public static String getPassword(int choosePassword) {
         return passwordList[choosePassword];
     }

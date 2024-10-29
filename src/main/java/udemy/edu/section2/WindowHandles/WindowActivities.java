@@ -1,4 +1,4 @@
-package udemy.edu.section2;
+package udemy.edu.section2.WindowHandles;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,5 +12,7 @@ public class WindowActivities {
         driver.navigate().to("https://rahulshettyacademy.com");
         driver.navigate().back();
         driver.navigate().forward();
+        driver.close();
+        System.out.println("TEST SUCCESS");
     }
 }

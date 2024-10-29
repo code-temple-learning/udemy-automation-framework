@@ -1,4 +1,4 @@
-package udemy.edu.section2;
+package udemy.edu.section2.Dropdowns;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +26,8 @@ public class UpdatedDropDown {
         } else {
             Assert.assertTrue(false);
         }
+        driver.close();
+        System.out.println("TEST SUCCESS");
 //        System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 //        driver.findElement(By.id("divpaxinfo")).click();
 //        Thread.sleep(2000L);

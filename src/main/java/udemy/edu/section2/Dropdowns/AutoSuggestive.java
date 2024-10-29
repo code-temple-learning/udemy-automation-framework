@@ -1,4 +1,4 @@
-package udemy.edu.section2;
+package udemy.edu.section2.Dropdowns;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,5 +20,7 @@ public class AutoSuggestive {
                 break;
             }
         }
+        driver.close();
+        System.out.println("TEST SUCCESS");
     }
 }

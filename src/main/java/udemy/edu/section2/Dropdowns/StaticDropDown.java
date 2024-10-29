@@ -1,4 +1,4 @@
-package udemy.edu.section2;
+package udemy.edu.section2.Dropdowns;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,6 +22,7 @@ public class StaticDropDown {
         dropdown.selectByIndex(1);
         Thread.sleep(4000);
         driver.close();
+        System.out.println("TEST SUCCESS");
 //        System.out.println(dropdown.getFirstSelectedOption().getText());
 //        dropdown.selectByVisibleText("AED");
 //        System.out.println(dropdown.getFirstSelectedOption().getText());

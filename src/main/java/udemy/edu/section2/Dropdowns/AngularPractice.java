@@ -1,4 +1,4 @@
-package udemy.edu.section2;
+package udemy.edu.section2.Dropdowns;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,8 +15,8 @@ public class AngularPractice {
         driver.findElement(By.name("email")).sendKeys("xsin@sexmail.org");
         driver.findElement(By.id("exampleInputPassword1")).sendKeys("greyFox");
         driver.findElement(By.id("exampleCheck1")).click();
-        WebElement staticDropdown = driver.findElement(By.id("exampleFormControlSelect1"));
-        Select dropdown = new Select(staticDropdown);
+        WebElement options = driver.findElement(By.id("exampleFormControlSelect1"));
+        Select dropdown = new Select(options);
         dropdown.selectByIndex(1);
         driver.findElement(By.id("inlineRadio1")).click();
         driver.findElement(By.name("bday")).sendKeys("02/25/1994");

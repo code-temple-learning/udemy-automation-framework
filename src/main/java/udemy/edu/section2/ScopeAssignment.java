@@ -25,5 +25,7 @@ public class ScopeAssignment {
             System.out.println("Message was unsuccessful");
         }
         System.out.println(driver.findElement(By.id("checkBoxOption2")).getText());
+        driver.close();
+        System.out.println("TEST SUCCESS");
     }
 }

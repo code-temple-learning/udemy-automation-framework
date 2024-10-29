@@ -30,5 +30,7 @@ public class Scope {
             driver.switchTo().window(it.next());
             System.out.println(driver.getTitle());
         }
+        driver.close();
+        System.out.println("TEST SUCCESS");
     }
 }

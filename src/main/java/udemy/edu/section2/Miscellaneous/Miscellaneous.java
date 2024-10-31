@@ -37,7 +37,7 @@ public class Miscellaneous {
 //        conn.connect();
 //        int respCode = conn.getResponseCode();
 //        System.out.println(respCode);
-//        driver.close();
+        driver.close();
         System.out.println("TEST SUCCESS");
     }
 }

@@ -1,1 +1,1 @@
-# Autmation Practice Frameowork For Beginners
+# Autmation Practice Framework For Beginners

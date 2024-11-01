@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -21,5 +22,10 @@ public class Filter {
         Assert.assertEquals(veggies.size(), filteredList.size());
         driver.close();
         System.out.println("TEST SUCCESS");
+    }
+
+    @Test()
+    public void test1() {
+        System.out.println("Test 1");
     }
 }

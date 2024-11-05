@@ -5,12 +5,12 @@ import org.testng.annotations.Test;
 public class day1 {
 
     @Test
-    public void Demo() {
+    public void demo() {
         System.out.println("hello");
     }
 
     @Test
-    public void SecondTest() {
+    public void secondTest() {
         System.out.println("bye");
     }
 }

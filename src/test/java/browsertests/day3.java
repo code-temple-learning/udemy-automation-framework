@@ -8,28 +8,28 @@ public class day3 {
 
     @Parameters({"URL"})
     @Test(priority = 2)
-    public void WebLoginCarLoan(String urlName) {
+    public void webLoginCarLoan(String urlName) {
         System.out.println("hello world");
         System.out.println(urlName);
     }
 
     @Test(priority = 3)
-    public void MobileLoginCarLoan() {
+    public void mobileLoginCarLoan() {
         System.out.println("hello world");
     }
 
     @Test
-    public void MobileSignInCarLoan() {
+    public void mobileSignInCarLoan() {
         System.out.println("Mobile sign-in car loan");
     }
 
     @Test
-    public void MobileSignOutCarLoan() {
+    public void mobileSignOutCarLoan() {
         System.out.println("Mobile sign-out car loan");
     }
 
     @DataProvider
-    public Object[][] GetData() {
+    public Object[][] getData() {
         Object[][] data = new Object[3][2];
         //1st array - user/pass - good credit history
         data[0][0] = "username";
@@ -44,7 +44,7 @@ public class day3 {
     }
 
     @Test(priority = 1)
-    public void APILoginCarLoan() {
+    public void apiLoginCarLoan() {
         System.out.println("hello world");
     }
 

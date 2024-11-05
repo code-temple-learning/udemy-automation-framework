@@ -7,7 +7,7 @@ public class day2 {
 
     @Parameters ({"URL", "APIKey/username"})
     @Test
-    public void PersonalLoan(String webName, String key) {
+    public void personalLoan(String webName, String key) {
         System.out.println("good");
         System.out.println(webName);
         System.out.println(key);

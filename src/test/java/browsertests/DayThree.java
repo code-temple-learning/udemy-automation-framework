@@ -40,7 +40,7 @@ public class DayThree {
         //3rd array - user/pass - fraud credit
         data[2][0] = "username2";
         data[2][1] = "password2";
-        return data;
+        return data; // testing merge
     }
 
     @Test(priority = 1)

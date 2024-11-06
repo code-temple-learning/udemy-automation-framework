@@ -5,7 +5,7 @@ public class PS2 extends PS3 {
     int a;
 
     public PS2(int a) {
-        super(a);
+        super(a); // a constructor that calls on the constructor of the parent class
         this.a = a;
     }
 

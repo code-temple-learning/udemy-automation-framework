@@ -1,9 +1,10 @@
 package browsertests;
 
+import cuziFramework.driver.PS1;
 import cuziFramework.driver.PS2;
 import org.testng.annotations.Test;
 
-public class PS extends cuziFramework.driver.PS1 {
+public class PS extends PS1 {
 
     @Test
     public void test() {

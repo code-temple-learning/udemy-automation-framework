@@ -3,38 +3,38 @@
 
 <suite name="Loan Department">
     <listeners>
-        <listener class-name="cuziFramework.driver.Listeners"/>
+        <listener class-name="cuziArchitecture.Framework.Listeners"/>
     </listeners>
 
     <test name="Personal Loan"> <!-- Framework Website Test -->
         <parameter name="URL" value="personalLoan.com"/> <!-- calls parameters at class level  -->
         <parameter name="APIKey/username" value="218798"/>
         <classes>
-            <class name="browsertests.DayOne">
+            <class name="CuziTestArchitecture.browsertests.DayOne">
                 <methods>
                     <include name="Demo"/> <!--Run single test method example-->
                 </methods>
             </class>
-            <class name="browsertests.DayTwo"/> <!--Run single test class example-->
+            <class name="CuziTestArchitecture.browsertests.DayTwo"/> <!--Run single test class example-->
         </classes>
     </test>
 
     <test name="Car Loan">
         <parameter name="URL" value="carLoan.com"/>
         <classes>
-            <class name="browsertests.DayThree"/> <!--Run tests based on priority example-->
+            <class name="CuziTestArchitecture.browsertests.DayThree"/> <!--Run tests based on priority example-->
         </classes>
     </test>
 
     <test name="Home Loan">
         <classes>
-            <class name="browsertests.DayFour"/>
+            <class name="CuziTestArchitecture.browsertests.DayFour"/>
         </classes>
     </test>
     
     <test name="Parent/child">
         <classes>
-            <class name="browsertests.PS"/>
+            <class name="CuziTestArchitecture.browsertests.PS"/>
         </classes>
     </test>
 </suite> <!-- Suite -->

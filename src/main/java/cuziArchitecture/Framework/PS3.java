@@ -1,4 +1,4 @@
-package cuziFramework.driver;
+package cuziArchitecture.Framework;
 
 public class PS3 {
 

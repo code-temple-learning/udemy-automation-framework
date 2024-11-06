@@ -1,4 +1,4 @@
-package browsertests;
+package CuziTestArchitecture.browsertests;
 
 import org.testng.annotations.Test;
 

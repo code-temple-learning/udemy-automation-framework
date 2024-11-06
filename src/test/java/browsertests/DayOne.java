@@ -2,7 +2,7 @@ package browsertests;
 
 import org.testng.annotations.Test;
 
-public class day1 {
+public class DayOne {
 
     @Test
     public void demo() {

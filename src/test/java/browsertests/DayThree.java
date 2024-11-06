@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class day3 {
+public class DayThree {
 
     @Parameters({"URL"})
     @Test(priority = 2)

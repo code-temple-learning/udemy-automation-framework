@@ -3,7 +3,7 @@ package browsertests;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class day2 {
+public class DayTwo {
 
     @Parameters ({"URL", "APIKey/username"})
     @Test

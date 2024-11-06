@@ -2,7 +2,7 @@ package browsertests;
 
 import org.testng.annotations.Test;
 
-public class day4 {
+public class DayFour {
 
   @Test
     public void webLoginHomeLoan() {

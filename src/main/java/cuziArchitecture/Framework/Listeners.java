@@ -1,4 +1,4 @@
-package cuziFramework.driver;
+package cuziArchitecture.Framework;
 
 import org.testng.ITestListener;
 import org.testng.ITestResult;

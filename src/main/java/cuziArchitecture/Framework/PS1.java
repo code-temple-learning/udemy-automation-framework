@@ -1,4 +1,4 @@
-package cuziFramework.driver;
+package cuziArchitecture.Framework;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

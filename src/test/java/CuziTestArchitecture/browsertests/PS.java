@@ -1,7 +1,7 @@
-package browsertests;
+package CuziTestArchitecture.browsertests;
 
-import cuziFramework.driver.PS1;
-import cuziFramework.driver.PS2;
+import cuziArchitecture.Framework.PS1;
+import cuziArchitecture.Framework.PS2;
 import org.testng.annotations.Test;
 
 public class PS extends PS1 {

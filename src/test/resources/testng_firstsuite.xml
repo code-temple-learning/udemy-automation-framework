@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Loan Department">
+    <listeners>
+        <listener class-name="cuziFramework.driver.Listeners"/>
+    </listeners>
 
     <test name="Personal Loan"> <!-- Framework Website Test -->
         <parameter name="URL" value="personalLoan.com"/> <!-- calls parameters at class level  -->
@@ -26,6 +29,12 @@
     <test name="Home Loan">
         <classes>
             <class name="browsertests.day4"/>
+        </classes>
+    </test>
+    
+    <test name="Parent/child">
+        <classes>
+            <class name="browsertests.PS"/>
         </classes>
     </test>
 </suite> <!-- Suite -->

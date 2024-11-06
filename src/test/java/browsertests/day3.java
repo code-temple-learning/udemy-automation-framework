@@ -47,7 +47,4 @@ public class day3 {
     public void apiLoginCarLoan() {
         System.out.println("hello world");
     }
-
-
-
 }

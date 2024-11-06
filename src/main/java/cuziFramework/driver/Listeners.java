@@ -1,4 +1,4 @@
-package browsertests;
+package cuziFramework.driver;
 
 import org.testng.ITestListener;
 import org.testng.ITestResult;

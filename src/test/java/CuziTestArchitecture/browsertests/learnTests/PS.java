@@ -1,7 +1,7 @@
-package CuziTestArchitecture.browsertests;
+package CuziTestArchitecture.browsertests.learnTests;
 
-import cuziArchitecture.Framework.PS1;
-import cuziArchitecture.Framework.PS2;
+import cuziArchitecture.miscLearning.PS1;
+import cuziArchitecture.miscLearning.PS2;
 import org.testng.annotations.Test;
 
 public class PS extends PS1 {

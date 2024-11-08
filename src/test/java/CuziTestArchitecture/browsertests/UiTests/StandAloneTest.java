@@ -1,5 +1,10 @@
-package cuziArchitecture.driver;
+package CuziTestArchitecture.browsertests.UiTests;
 
+import CuziTestArchitecture.browsertests.UiTests.baseTest.BaseTests;
+import cuziArchitecture.pages.CartPage;
+import cuziArchitecture.pages.CheckoutPage;
+import cuziArchitecture.pages.ConfirmationPage;
+import cuziArchitecture.pages.ProductPage;
 import org.openqa.selenium.WebElement;
 
 import org.testng.Assert;
@@ -10,7 +15,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-public class StandAloneTest extends InitialPage {
+public class StandAloneTest extends BaseTests {
     String productName = "ZARA COAT 3";
 
     @Test(dataProvider = "getData")

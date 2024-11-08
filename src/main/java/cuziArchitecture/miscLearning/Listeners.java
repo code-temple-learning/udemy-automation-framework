@@ -1,4 +1,4 @@
-package cuziArchitecture.Framework;
+package cuziArchitecture.miscLearning;
 
 import org.testng.ITestListener;
 import org.testng.ITestResult;

@@ -3,38 +3,38 @@
 
 <suite name="Loan Department">
     <listeners>
-        <listener class-name="cuziArchitecture.Framework.Listeners"/>
+        <listener class-name="cuziArchitecture.miscLearning.Listeners"/>
     </listeners>
 
     <test name="Personal Loan"> <!-- Framework Website Test -->
         <parameter name="URL" value="personalLoan.com"/> <!-- calls parameters at class level  -->
         <parameter name="APIKey/username" value="218798"/>
         <classes>
-            <class name="CuziTestArchitecture.browsertests.DayOne">
+            <class name="CuziTestArchitecture.browsertests.learnTests.DayOne">
                 <methods>
                     <include name="Demo"/> <!--Run single test method example-->
                 </methods>
             </class>
-            <class name="CuziTestArchitecture.browsertests.DayTwo"/> <!--Run single test class example-->
+            <class name="CuziTestArchitecture.browsertests.learnTests.DayTwo"/> <!--Run single test class example-->
         </classes>
     </test>
 
     <test name="Car Loan">
         <parameter name="URL" value="carLoan.com"/>
         <classes>
-            <class name="CuziTestArchitecture.browsertests.DayThree"/> <!--Run tests based on priority example-->
+            <class name="CuziTestArchitecture.browsertests.learnTests.DayThree"/> <!--Run tests based on priority example-->
         </classes>
     </test>
 
     <test name="Home Loan">
         <classes>
-            <class name="CuziTestArchitecture.browsertests.DayFour"/>
+            <class name="CuziTestArchitecture.browsertests.learnTests.DayFour"/>
         </classes>
     </test>
     
     <test name="Parent/child">
         <classes>
-            <class name="CuziTestArchitecture.browsertests.PS"/>
+            <class name="CuziTestArchitecture.browsertests.learnTests.PS"/>
         </classes>
     </test>
 </suite> <!-- Suite -->

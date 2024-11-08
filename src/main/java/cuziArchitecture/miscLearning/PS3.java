@@ -1,4 +1,4 @@
-package cuziArchitecture.Framework;
+package cuziArchitecture.miscLearning;
 
 public class PS3 {
 

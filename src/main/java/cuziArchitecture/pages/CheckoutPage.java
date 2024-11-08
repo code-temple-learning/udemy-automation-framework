@@ -1,4 +1,4 @@
-package cuziArchitecture.driver;
+package cuziArchitecture.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

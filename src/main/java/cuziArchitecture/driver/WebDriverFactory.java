@@ -1,16 +1,16 @@
 package cuziArchitecture.driver;
 
+import cuziArchitecture.pages.LandingPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-public class InitialPage {
+public class WebDriverFactory {
+
     public WebDriver driver;
     public LandingPage landingPage;
 
@@ -26,16 +26,4 @@ public class InitialPage {
         return driver;
     }
 
-    @BeforeMethod
-    public LandingPage launchApplication() throws IOException {
-        driver = initializeDriver();
-        landingPage = new LandingPage(driver);
-        landingPage.webPage();
-        return landingPage;
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        driver.close();
-    }
 }

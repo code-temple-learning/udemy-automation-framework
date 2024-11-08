@@ -10,31 +10,31 @@
         <parameter name="URL" value="personalLoan.com"/> <!-- calls parameters at class level  -->
         <parameter name="APIKey/username" value="218798"/>
         <classes>
-            <class name="CuziTestArchitecture.browsertests.DayOne">
+            <class name="cuziArchitecture.misctests.DayOne">
                 <methods>
                     <include name="Demo"/> <!--Run single test method example-->
                 </methods>
             </class>
-            <class name="CuziTestArchitecture.browsertests.DayTwo"/> <!--Run single test class example-->
+            <class name="cuziArchitecture.misctests.DayTwo"/> <!--Run single test class example-->
         </classes>
     </test>
 
     <test name="Car Loan">
         <parameter name="URL" value="carLoan.com"/>
         <classes>
-            <class name="CuziTestArchitecture.browsertests.DayThree"/> <!--Run tests based on priority example-->
+            <class name="cuziArchitecture.misctests.DayThree"/> <!--Run tests based on priority example-->
         </classes>
     </test>
 
     <test name="Home Loan">
         <classes>
-            <class name="CuziTestArchitecture.browsertests.DayFour"/>
+            <class name="cuziArchitecture.misctests.DayFour"/>
         </classes>
     </test>
     
     <test name="Parent/child">
         <classes>
-            <class name="CuziTestArchitecture.browsertests.PS"/>
+            <class name="cuziArchitecture.misctests.PS"/>
         </classes>
     </test>
 </suite> <!-- Suite -->

@@ -1,4 +1,4 @@
-package CuziTestArchitecture.browsertests;
+package cuziArchitecture.misctests;
 
 import cuziArchitecture.Framework.PS1;
 import cuziArchitecture.Framework.PS2;

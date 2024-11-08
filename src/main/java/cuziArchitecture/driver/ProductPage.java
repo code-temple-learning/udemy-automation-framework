@@ -12,13 +12,13 @@ public class ProductPage extends ParentPage {
     WebDriver driver;
 
     @FindBy(css = ".mb-3")
-    List<WebElement> products;
+    private List<WebElement> products;
     By productsBy = By.cssSelector(".mb-3");// gets list of all items available on the page
     By addToCart = By.cssSelector(".card-body button:last-of-type");
     By toastMessage = By.cssSelector("#toast-container");
 
     @FindBy(css = ".ng-animating")
-    WebElement spinner; // invisible wait background loading spinner
+    private WebElement spinner; // invisible wait background loading spinner
 
     public ProductPage(WebDriver driver) {
         super(driver);

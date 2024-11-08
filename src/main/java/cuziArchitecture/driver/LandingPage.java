@@ -9,13 +9,13 @@ public class LandingPage extends ParentPage {
     WebDriver driver;
 
     @FindBy(id = "userEmail")
-    WebElement userEmail;
+    private WebElement userEmail;
 
     @FindBy(id = "userPassword")
-    WebElement userPassword;
+    private WebElement userPassword;
 
     @FindBy(id = "login")
-    WebElement submit;
+    private WebElement submit;
 
     public LandingPage(WebDriver driver) {
         super(driver);

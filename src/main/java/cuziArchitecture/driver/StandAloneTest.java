@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-public class StandAloneTest extends BaseTest {
+public class StandAloneTest extends InitialPage {
     String productName = "ZARA COAT 3";
 
     @Test(dataProvider = "getData")

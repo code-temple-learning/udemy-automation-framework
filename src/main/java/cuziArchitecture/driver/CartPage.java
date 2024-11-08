@@ -11,10 +11,10 @@ public class CartPage extends ParentPage {
     WebDriver driver;
 
     @FindBy(css = ".totalRow button")
-    WebElement checkoutEle;
+    private WebElement checkoutEle;
 
     @FindBy(css = ".cartSection h3")
-    List<WebElement> cartProducts; // gets list of all items in cart
+    private List<WebElement> cartProducts; // gets list of all items in cart
 
     public CartPage(WebDriver driver) {
         super(driver);

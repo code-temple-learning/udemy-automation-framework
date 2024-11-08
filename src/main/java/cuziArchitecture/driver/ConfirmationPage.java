@@ -9,7 +9,7 @@ public class ConfirmationPage extends ParentPage {
     WebDriver driver;
 
     @FindBy(css = ".hero-primary")
-    WebElement confirmationMessage;
+    private WebElement confirmationMessage;
 
     public ConfirmationPage(WebDriver driver) {
         super(driver);

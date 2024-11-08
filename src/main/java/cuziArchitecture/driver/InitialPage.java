@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-public class BaseTest {
+public class InitialPage {
     public WebDriver driver;
     public LandingPage landingPage;
 

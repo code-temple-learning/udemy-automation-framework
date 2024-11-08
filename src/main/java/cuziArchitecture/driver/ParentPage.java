@@ -13,7 +13,7 @@ public class ParentPage {
     WebDriver driver;
 
     @FindBy(css = "[routerlink*='cart']")
-    WebElement cartHeader; // gets cart button
+    private WebElement cartHeader; // gets cart button
 
     public ParentPage(WebDriver driver) {
         this.driver = driver;

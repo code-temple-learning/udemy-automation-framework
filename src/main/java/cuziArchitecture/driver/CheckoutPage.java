@@ -11,13 +11,13 @@ public class CheckoutPage extends ParentPage {
     WebDriver driver;
 
     @FindBy(css = "[placeholder='Select Country']")
-    WebElement country;
+    private WebElement country;
 
     @FindBy(xpath = "(//button[contains(@class,'ta-item')])[2]")
-    WebElement selectCountry;
+    private WebElement selectCountry;
 
     @FindBy(css = ".action__submit")
-    WebElement submit;
+    private WebElement submit;
 
     By results = By.cssSelector(".ta-results");
 

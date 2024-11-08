@@ -12,13 +12,14 @@ import java.util.List;
 public class StandAloneTest {
 
     public static void main(String[] args) {
-        String productName = "ZARA COAT 3";
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         LandingPage landingPage = new LandingPage(driver);
         landingPage.webPage();
         ProductPage productPage = landingPage.loginApplication("tjeffy@yahoo.com", "Yahoo97!");
-        List<WebElement> products = productPage.getProductList();
+//        List<WebElement> products = productPage.getProductList();
+
+        String productName = "ZARA COAT 3";
         productPage.addProductToCart(productName);
         CartPage cartPage = productPage.goToCartPage();
         Boolean match = cartPage.verifyProductDisplay(productName);

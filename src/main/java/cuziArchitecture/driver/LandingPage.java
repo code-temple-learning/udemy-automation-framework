@@ -28,8 +28,8 @@ public class LandingPage extends ParentPage {
     }
 
     public ProductPage loginApplication(String email, String password) {
-        userEmail.sendKeys();
-        userPassword.sendKeys();
+        userEmail.sendKeys(email);
+        userPassword.sendKeys(password);
         submit.click();
         ProductPage productPage = new ProductPage(driver);
         return productPage;

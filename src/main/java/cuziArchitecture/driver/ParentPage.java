@@ -25,7 +25,7 @@ public class ParentPage {
     }
 
     public void elementDisappear(WebElement ele) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(4));
         wait.until(ExpectedConditions.invisibilityOf(ele));
     }
 

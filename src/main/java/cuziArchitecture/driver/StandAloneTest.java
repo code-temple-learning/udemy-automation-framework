@@ -1,26 +1,23 @@
 package cuziArchitecture.driver;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 
-import java.time.Duration;
+import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 
-public class StandAloneTest {
+public class StandAloneTest extends BaseTest {
+    String productName = "ZARA COAT 3";
 
-    public static void main(String[] args) {
-        WebDriver driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        LandingPage landingPage = new LandingPage(driver);
-        landingPage.webPage();
-        ProductPage productPage = landingPage.loginApplication("tjeffy@yahoo.com", "Yahoo97!");
-//        List<WebElement> products = productPage.getProductList();
-
-        String productName = "ZARA COAT 3";
-        productPage.addProductToCart(productName);
+    @Test(dataProvider = "getData")
+    public void standAlone(HashMap<String, String> input) throws IOException {
+        ProductPage productPage = landingPage.loginApplication(input.get("email"), input.get("password"));
+        List<WebElement> products = productPage.getProductList();
+        productPage.addProductToCart(input.get("product"));
         CartPage cartPage = productPage.goToCartPage();
         Boolean match = cartPage.verifyProductDisplay(productName);
         Assert.assertTrue(match);
@@ -29,7 +26,20 @@ public class StandAloneTest {
         ConfirmationPage confirmationPage = checkoutPage.submitOrder();
         String confirmMessage = confirmationPage.getConfirmationMessage();
         Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));// compares variable 'confirmMessage' to the text to confirm assertion is true
-        driver.close();
         System.out.println("TEST SUCCESS");
+    }
+
+    @DataProvider
+    public Object[][] getData() {
+        HashMap<String, String> map = new HashMap<String, String>();
+        map.put("email", "tjeffy@yahoo.com");
+        map.put("password", "Yahoo97!");
+        map.put("product", "ZARA COAT 3");
+
+        HashMap<String, String> map1 = new HashMap<String, String>();
+        map1.put("email", "jeffyt@yahoo.com");
+        map1.put("password", "Yahoo97!");
+        map1.put("product", "ZARA COAT 3");
+        return new Object[][]{{map}, {map1}};
     }
 }

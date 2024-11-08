@@ -31,7 +31,6 @@ public class ParentPage {
 
     public CartPage goToCartPage() {
         cartHeader.click(); // loads cart page by clicking
-        CartPage cartPage = new CartPage(driver);
-        return cartPage;
+        return new CartPage(driver);
     }
 }

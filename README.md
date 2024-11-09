@@ -1,1 +1,1 @@
-# Autmation Practice Framework For Beginners
+# Automation Practice Framework For Beginners

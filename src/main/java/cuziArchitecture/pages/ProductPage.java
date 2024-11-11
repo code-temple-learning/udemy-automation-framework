@@ -38,8 +38,11 @@ public class ProductPage extends ParentPage {
     }
 
     public void addProductToCart(String productName) {
+        System.out.println("gets product name");
         WebElement productList = getProductName(productName);
+        System.out.println("adds product to cart");
         productList.findElement(addToCart).click();// filters products through a stream to find product you want to purchase
+        System.out.println("item added");
         elementWait(toastMessage);
         elementDisappear(spinner);
     }

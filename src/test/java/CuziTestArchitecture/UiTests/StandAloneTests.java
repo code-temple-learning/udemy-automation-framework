@@ -18,7 +18,7 @@ import java.util.List;
 public class StandAloneTests extends BaseTests {
     String productName = "ZARA COAT 3";
 
-    @Test(dataProvider = "getData")
+    @Test(dataProvider = "getDataTests")
     public void standAloneTests(HashMap<String, String> input) throws IOException {
         ProductPage productPage = landingPage.loginApplication(input.get("email"), input.get("password"));
         List<WebElement> products = productPage.getProductList();
@@ -31,7 +31,6 @@ public class StandAloneTests extends BaseTests {
         ConfirmationPage confirmationPage = checkoutPage.submitOrder();
         String confirmMessage = confirmationPage.getConfirmationMessage();
         Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));// compares variable 'confirmMessage' to the text to confirm assertion is true
-        System.out.println("TEST SUCCESS");
     }
 
     @DataProvider

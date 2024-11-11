@@ -23,12 +23,16 @@ public class CartPage extends ParentPage {
     }
 
     public Boolean verifyProductDisplay(String productName) {
+        System.out.println("compares product text");
         Boolean match = cartProducts.stream().anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
+        System.out.println("returns product name");
         return match;
     }
 
     public CheckoutPage goToCheckout() {
+        System.out.println("clicks checkout button");
         checkoutEle.click();
+        System.out.println("moves to checkout page");
         return new CheckoutPage(driver);
     }
 }

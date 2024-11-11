@@ -30,7 +30,9 @@ public class ParentPage {
     }
 
     public CartPage goToCartPage() {
+        System.out.println("clicks go to cart button");
         cartHeader.click(); // loads cart page by clicking
+        System.out.println("cart button clicked");
         return new CartPage(driver);
     }
 }

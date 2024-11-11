@@ -1,6 +1,6 @@
-package CuziTestArchitecture.browsertests.UiTests;
+package CuziTestArchitecture.UiTests;
 
-import CuziTestArchitecture.browsertests.UiTests.baseTest.BaseTests;
+import CuziTestArchitecture.UiTests.baseTest.BaseTests;
 import cuziArchitecture.pages.CartPage;
 import cuziArchitecture.pages.CheckoutPage;
 import cuziArchitecture.pages.ConfirmationPage;
@@ -15,11 +15,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-public class StandAloneTest extends BaseTests {
+public class StandAloneTests extends BaseTests {
     String productName = "ZARA COAT 3";
 
     @Test(dataProvider = "getData")
-    public void standAlone(HashMap<String, String> input) throws IOException {
+    public void standAloneTests(HashMap<String, String> input) throws IOException {
         ProductPage productPage = landingPage.loginApplication(input.get("email"), input.get("password"));
         List<WebElement> products = productPage.getProductList();
         productPage.addProductToCart(input.get("product"));
@@ -35,7 +35,7 @@ public class StandAloneTest extends BaseTests {
     }
 
     @DataProvider
-    public Object[][] getData() {
+    public Object[][] getDataTests() {
         HashMap<String, String> map = new HashMap<String, String>();
         map.put("email", "tjeffy@yahoo.com");
         map.put("password", "Yahoo97!");

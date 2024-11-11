@@ -1,35 +1,35 @@
-package CuziTestArchitecture.browsertests.learnTests;
+package CuziTestArchitecture.learnTests;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class DayThree {
+public class DayThreeTests {
 
     @Parameters({"URL"})
     @Test(priority = 2)
-    public void webLoginCarLoan(String urlName) {
+    public void webLoginCarLoanTest(String urlName) {
         System.out.println("hello world");
         System.out.println(urlName);
     }
 
     @Test(priority = 3)
-    public void mobileLoginCarLoan() {
+    public void mobileLoginCarLoanTest() {
         System.out.println("hello world");
     }
 
     @Test
-    public void mobileSignInCarLoan() {
+    public void mobileSignInCarLoanTest() {
         System.out.println("Mobile sign-in car loan");
     }
 
     @Test
-    public void mobileSignOutCarLoan() {
+    public void mobileSignOutCarLoanTest() {
         System.out.println("Mobile sign-out car loan");
     }
 
     @DataProvider
-    public Object[][] getData() {
+    public Object[][] getDataTest() {
         Object[][] data = new Object[3][2];
         //1st array - user/pass - good credit history
         data[0][0] = "username";
@@ -44,7 +44,7 @@ public class DayThree {
     }
 
     @Test(priority = 1)
-    public void apiLoginCarLoan() {
+    public void apiLoginCarLoanTest() {
         System.out.println("hello world");
     }
 }

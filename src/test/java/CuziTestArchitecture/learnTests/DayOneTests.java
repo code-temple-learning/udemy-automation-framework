@@ -1,11 +1,11 @@
-package CuziTestArchitecture.browsertests.learnTests;
+package CuziTestArchitecture.learnTests;
 
 import org.testng.annotations.Test;
 
-public class DayOne {
+public class DayOneTests {
 
     @Test
-    public void demo() {
+    public void demoTest() {
         System.out.println("hello");
     }
 

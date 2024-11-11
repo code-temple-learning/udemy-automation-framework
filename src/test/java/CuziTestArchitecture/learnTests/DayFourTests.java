@@ -1,21 +1,21 @@
-package CuziTestArchitecture.browsertests.learnTests;
+package CuziTestArchitecture.learnTests;
 
 import org.testng.annotations.Test;
 
-public class DayFour {
+public class DayFourTests {
 
   @Test
-    public void webLoginHomeLoan() {
+    public void webLoginHomeLoanTest() {
       System.out.println("Web login home");
   }
 
   @Test
-    public void mobileLoginHomeLoan() {
+    public void mobileLoginHomeLoanTest() {
       System.out.println("Mobile login home");
   }
 
   @Test
-    public void apiLoginHomeLoan() {
+    public void apiLoginHomeLoanTest() {
       System.out.println("API login home");
   }
 }

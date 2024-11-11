@@ -1,4 +1,4 @@
-package CuziTestArchitecture.browsertests.UiTests.baseTest;
+package CuziTestArchitecture.UiTests.baseTest;
 
 import cuziArchitecture.driver.WebDriverFactory;
 import cuziArchitecture.pages.LandingPage;

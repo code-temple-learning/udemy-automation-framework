@@ -19,7 +19,7 @@ public class StandAloneTests extends BaseTests {
     String productName = "ZARA COAT 3";
 
     @Test(dataProvider = "getDataTests")
-    public void standAloneTests(HashMap<String, String> input) throws IOException {
+    public void standAloneTest(HashMap<String, String> input) throws IOException {
         ProductPage productPage = landingPage.loginApplication(input.get("email"), input.get("password"));
         List<WebElement> products = productPage.getProductList();
         productPage.addProductToCart(input.get("product"));
@@ -34,7 +34,7 @@ public class StandAloneTests extends BaseTests {
     }
 
     @DataProvider
-    public Object[][] getDataTests() {
+    public Object[][] getDataTest() {
         HashMap<String, String> map = new HashMap<String, String>();
         map.put("email", "tjeffy@yahoo.com");
         map.put("password", "Yahoo97!");

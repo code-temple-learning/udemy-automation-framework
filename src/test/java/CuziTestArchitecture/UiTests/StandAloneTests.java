@@ -18,7 +18,7 @@ import java.util.List;
 public class StandAloneTests extends BaseTests {
     String productName = "ZARA COAT 3";
 
-    @Test(dataProvider = "getDataTests")
+    @Test(dataProvider = "getDataTest")
     public void standAloneTest(HashMap<String, String> input) throws IOException {
         ProductPage productPage = landingPage.loginApplication(input.get("email"), input.get("password"));
         List<WebElement> products = productPage.getProductList();

@@ -18,6 +18,7 @@ public class ConfirmationPage extends ParentPage {
     }
 
     public String getConfirmationMessage() {
+        System.out.println("confirmation message displayed");
         return confirmationMessage.getText();
     }
 }

@@ -21,7 +21,6 @@ public class StandAloneTests extends BaseTests {
     @Test(dataProvider = "getDataTest")
     public void standAloneTest(HashMap<String, String> input) throws IOException {
         ProductPage productPage = landingPage.loginApplication(input.get("email"), input.get("password"));
-        List<WebElement> products = productPage.getProductList();
         productPage.addProductToCart(input.get("product"));
         CartPage cartPage = productPage.goToCartPage();
         Boolean match = cartPage.verifyProductDisplay(productName);

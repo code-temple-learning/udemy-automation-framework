@@ -1,10 +1,10 @@
-package CuziTestArchitecture.learnTests;
+package cuziArchitecture.misctests;
 
 import cuziArchitecture.miscLearning.PS1;
 import cuziArchitecture.miscLearning.PS2;
 import org.testng.annotations.Test;
 
-public class PSTests extends PS1 {
+public class PS extends PS1 {
 
     @Test
     public void test() {
